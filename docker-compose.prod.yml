@@ -2,6 +2,6 @@ version: '3.8'
 
 services:
   app:
-    image: your-dockerhub-username/pad-app:latest
+    image: ${DOCKER_USERNAME}/pad-app:latest
     ports:
       - "80:3000"
