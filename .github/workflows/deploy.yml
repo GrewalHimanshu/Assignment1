@@ -12,34 +12,36 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1.1.1
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1.1.1
 
-    - name: Log in to Docker Hub
-      uses: docker/login-action@v1.10.0
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v1.10.0
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Build and push Docker image
-      run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/pad-app:latest .
-        docker push ${{ secrets.DOCKER_USERNAME }}/pad-app:latest
-        # Since I did not found anything related to back end which was asked in the Assessment Task, therefore no Backend and FrontEnd Dockerfiles created separately
+      - name: Build and push Docker image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/pad-app:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/pad-app:latest
 
-    - name: Deploy to staging
-      run: |
-        DOCKER_USERNAME=${DOCKER_USERNAME} docker-compose -f docker-compose.staging.yml up -d
+      - name: Deploy to staging
+        run: |
+          DOCKER_USERNAME=${DOCKER_USERNAME} docker-compose -f docker-compose.staging.yml up -d
 
-    - name: Run integration tests
-      run: |
-        # Also, here there was nothing for tests. So I skipped this too.
+      - name: Run integration tests
+        run: |
+          # Add your integration tests here
 
-    - name: Deploy to production
-      if: github.ref == 'refs/heads/main'
-      run: |
-        DOCKER_USERNAME=${DOCKER_USERNAME} docker-compose -f docker-compose.prod.yml up -d
+      - name: Deploy to production
+        if: github.ref == 'refs/heads/main'
+        run: |
+          DOCKER_USERNAME=${DOCKER_USERNAME} docker-compose -f docker-compose.prod.yml up -d
