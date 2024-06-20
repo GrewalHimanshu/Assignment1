@@ -31,7 +31,7 @@ jobs:
         docker push ${{ secrets.DOCKER_USERNAME }}/pad-app:latest
 	# Since I did not found anything related to back end which was asked in the Assessment Task, therefore no Backend and FrontEnd Dockerfiles created separately
 
-     - name: Deploy to staging
+    - name: Deploy to staging
       run: |
         docker-compose -f docker-compose.staging.yml up -d
 
