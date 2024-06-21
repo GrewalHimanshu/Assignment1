@@ -5,7 +5,7 @@ Pad is an extremely lightweight, low-latency, collaborative notepad built with [
 
 -----------------------
 
-1). Requirements
+1). **Requirements**
 
     * Node 6.x or later
     * Required Node packages
@@ -15,7 +15,7 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
 
 -----------------------
 
-2). Run your own server!
+2). **Run your own server!**
 
     git clone https://github.com/GrewalHimanshu/Assignment1.git
 
@@ -24,7 +24,7 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
 
 -----------------------
 
-3). Assessment task :
+3). **Assessment task :**
 
  ![Assessment Tasks Screenshot](https://github.com/GrewalHimanshu/Assignment1/blob/main/Screenshots/AssessmentTasks.JPG?raw=true)
 
@@ -40,7 +40,7 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
 
 -----------------------
 
-4). Documentation
+4). **Documentation:**
 
 
   4.1. CI/CD Setup Instructions
@@ -61,20 +61,20 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
 
  -----------------------------
  
-5). Command to run Prometheus:
+5). **Command to run Prometheus:**
 
     docker run -d -p 9090:9090 -v $(pwd)/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
 
 ---------------
 
-6). Final Steps
+6). **Final Steps**
 
      1. Commit and Push Code:
      2. Commit all changes and push them to the main branch of your repository.
 
-Verify Pipeline:
+**Verify Pipeline:**
 
     1. Create a pull request to trigger the CI/CD pipeline.
     2. Check GitHub Actions to see the pipeline in action.
     3. Monitor Application:
-   Access Prometheus at http://localhost:9090 to monitor your application.
+   **Access Prometheus at http://localhost:9090 to monitor your application.**
