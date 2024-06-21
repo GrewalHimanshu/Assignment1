@@ -22,6 +22,8 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
     cd pad
     npm install && npm start
 
+![Pad Screenshot](https://github.com/GrewalHimanshu/Assignment1/blob/main/Screenshots/Pad.JPG?raw=true)
+
 -----------------------
 
 3). **Assessment task :**
