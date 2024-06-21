@@ -34,16 +34,16 @@ npm install && npm start
 
 4. Documentation
 
-  4.1 CI/CD Setup Instructions
+  4.1. CI/CD Setup Instructions
       1. Place the GitHub Actions workflow file in .github/workflows/deploy.yml.
       2. Set up Docker secrets in your GitHub repository.
       3. Ensure Dockerfile and Docker Compose files are in place.
 
-  4.2 Docker Deployment Guide
+  4.2. Docker Deployment Guide
       1. Build and push Docker images using the GitHub Actions workflow.
       2. Deploy using Docker Compose for staging and production environments.
 
-  4.3 Prometheus Monitoring Configuration
+  4.3. Prometheus Monitoring Configuration
       1. Configure Prometheus with the provided prometheus.yml.
       2. Ensure your application exposes metrics for Prometheus.
 
