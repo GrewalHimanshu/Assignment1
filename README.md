@@ -66,7 +66,7 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
 
 Secrets Management:
 
-         Go to your GitHub repository settings and add the following secrets add these as name and edit the data in the next section: 
+         Go to your GitHub repository settings and add the following secrets add these as name and edit the data as require in the next section: 
 
          "DOCKER_USERNAME"
          "DOCKER_PASSWORD"
