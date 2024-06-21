@@ -24,7 +24,7 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
 
 -----------------------
 
-3). 
+3). ![Assessment Tasks Screenshot](https://github.com/GrewalHimanshu/Assignment1/blob/main/Screenshots/AssessmentTasks.JPG?raw=true)
 
 -----------------------
 
