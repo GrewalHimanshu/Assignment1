@@ -15,7 +15,7 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
 Run your own server!
 --------------------
 
-git clone https://github.com/petercunha/Pad.git
+git clone https://github.com/GrewalHimanshu/Assignment1.git
 cd pad
 npm install && npm start
 
