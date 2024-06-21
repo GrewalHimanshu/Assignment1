@@ -68,4 +68,4 @@ Verify Pipeline:
     1. Create a pull request to trigger the CI/CD pipeline.
     2. Check GitHub Actions to see the pipeline in action.
     3. Monitor Application:
-         **Access Prometheus at http://localhost:9090 to monitor your application.**
+   Access Prometheus at http://localhost:9090 to monitor your application.
