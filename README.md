@@ -44,7 +44,6 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
 
 4). **Documentation:**
 
-
   4.1. CI/CD Setup Instructions
   
       1. Place the GitHub Actions workflow file in .github/workflows/deploy.yml.
@@ -61,7 +60,18 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
       1. Configure Prometheus with the provided prometheus.yml.
       2. Ensure your application exposes metrics for Prometheus.
 
- -----------------------------
+-----------------------------
+
+**Note :**
+
+Secrets Management:
+
+         Go to your GitHub repository settings and add the following secrets add these as name and edit the data in the next section: 
+
+         "DOCKER_USERNAME"
+         "DOCKER_PASSWORD"
+
+------------------------------
  
 5). **Command to run Prometheus:**
 
