@@ -65,7 +65,11 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
  
 5). **Command to run Prometheus:**
 
-    docker run -d -p 9090:9090 -v $(pwd)/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
+      docker run -d -p 9090:9090 -v /path/to/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
+
+In my case this file was located on the root directory, therefore:
+
+      docker run -d -p 9090:9090 -v $(pwd)/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
 
 ---------------
 
@@ -80,3 +84,5 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
     2. Check GitHub Actions to see the pipeline in action.
     3. Monitor Application:
    **Access Prometheus at http://localhost:9090 to monitor your application.**
+
+![Prometheus Screenshot](https://github.com/GrewalHimanshu/Assignment1/blob/main/Screenshots/Prometheus.JPG?raw=true)
