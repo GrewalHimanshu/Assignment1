@@ -3,10 +3,6 @@
 
 Pad is an extremely lightweight, low-latency, collaborative notepad built with [WebSockets](https://en.wikipedia.org/wiki/WebSocket) and [NodeJS](https://nodejs.org/)!
 
-[Check out our demo](https://paperpad.now.sh)
-
-
-
 Requirements
 ------------
 
