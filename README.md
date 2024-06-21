@@ -85,7 +85,7 @@ In my case this file was located on the root directory, therefore:
 
 6). **Final Steps**
 
-     1. Commit and Push Code:
+     1. Commit and Push Code.
      2. Commit all changes and push them to the main branch of your repository.
 
 **Verify Pipeline:**
