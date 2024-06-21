@@ -24,18 +24,22 @@ As long as you have Node 6 installed, you can just `git clone` and `npm install`
 
 -----------------------
 
-3).
+3). 
 
 -----------------------
+
 
 **Note:** 
 
 
 **The given repository lacked specific files for separate frontend and backend Dockerfiles and Integration Tests. Therefore, only a single Dockerfile was created and placeholder steps for integration tests were skipped. Adjustments should be made based on the actual project structure when available.**
 
+
+
 -----------------------
 
 4). Documentation
+
 
   4.1. CI/CD Setup Instructions
   
