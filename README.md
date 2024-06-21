@@ -3,8 +3,9 @@
 
 Pad is an extremely lightweight, low-latency, collaborative notepad built with [WebSockets](https://en.wikipedia.org/wiki/WebSocket) and [NodeJS](https://nodejs.org/)!
 
+-----------------------
+
 1. Requirements
----------------
 
   * Node 6.x or later
   * Required Node packages
@@ -12,20 +13,26 @@ Pad is an extremely lightweight, low-latency, collaborative notepad built with [
 
 As long as you have Node 6 installed, you can just `git clone` and `npm install` and you'll be ready to roll!
 
-2. Run your own server!
 -----------------------
+
+2. Run your own server!
 
 git clone https://github.com/GrewalHimanshu/Assignment1.git
 
 cd pad
 npm install && npm start
 
+-----------------------
+
 3.
 
-****Note****: **The given repository lacked specific files for separate frontend and backend Dockerfiles and Integration Tests. Therefore, only a single Dockerfile and placeholder steps for integration tests were provided. Adjustments should be made based on the actual project structure when available.**
+-----------------------
+
+<span style="font-size:18px;">****Note****: **The given repository lacked specific files for separate frontend and backend Dockerfiles and Integration Tests. Therefore, only a single Dockerfile and placeholder steps for integration tests were provided. Adjustments should be made based on the actual project structure when available.**</span>
+
+-----------------------
 
 4. Documentation
-------------------
 
   4.1. CI/CD Setup Instructions
       1. Place the GitHub Actions workflow file in .github/workflows/deploy.yml.
